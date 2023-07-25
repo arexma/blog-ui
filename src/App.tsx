@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [text, setText] = useState<string>("Press me");
+
+  const handleClick = () => {
+    fetch('http://localhost:8000/health-check')
+    .then((response: Response) => {
+      return response.text();
+    })
+    .then((message: string) => {
+      setText(message);
+    })
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +30,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={handleClick}>{text}</button>
       </header>
     </div>
   );

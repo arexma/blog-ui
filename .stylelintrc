@@ -1,9 +1,16 @@
 {
-    "printWidth": 120,
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "bracketSameLine": false,
-    "arrowParens": "avoid"
+    "extends": ["stylelint-config-recommended-scss", "stylelint-config-hudochenkov/order"],
+    "plugins": ["stylelint-no-unsupported-browser-features"],
+    "ignoreFiles": ["node_modules/**"],
+    "rules": {
+        "no-descending-specificity": null,
+        "length-zero-no-unit": [true, {"ignore": ["custom-properties"]}],
+        "function-name-case": "lower",
+        "selector-type-case": "lower",
+        "at-rule-empty-line-before": ["always", {"except": ["first-nested"], "ignore": ["after-comment"]}],
+        "declaration-block-no-redundant-longhand-properties": true,
+        "shorthand-property-no-redundant-values": true,
+        "scss/at-import-no-partial-leading-underscore": null,
+        "plugin/no-unsupported-browser-features": [true, {"severity": "warning", "ignorePartialSupport": true, "ignore": ["css-nesting"]}]
+    }
 }
