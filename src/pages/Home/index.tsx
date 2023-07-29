@@ -1,10 +1,12 @@
-import React, { SetStateAction } from 'react';
-import image from '../../assets/images/master.png';
+import React, { useState } from 'react';
+import EnterMain from '../../components/Enter_Main';
+
 function Home() {
+  const [clicked, setClicked] = useState(true);
   return (
     <div>
-      <h1>Hello</h1>
-      <img src={image}></img>
+      {clicked && <EnterMain enterClicked={clicked} setEnterClick={setClicked} />}
+      {!clicked && <h1>TESTTEST</h1>}
     </div>
   );
 }
