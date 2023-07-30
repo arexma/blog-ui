@@ -4,29 +4,20 @@ interface EnterMainProps {
   enterClicked: boolean;
   setEnterClick: React.Dispatch<SetStateAction<boolean>>;
 }
+import './index.css'
 
-const startButton = {
-  position: 'fixed',
-  zIndex: 2,
-} as React.CSSProperties;
-
-const startImage = {
-  position: 'fixed',
-  zIndex: 1,
-} as React.CSSProperties;
 
 function EnterMain(props: EnterMainProps) {
   return (
-    <div>
-      <div>
-        <img style={startImage} src={nonFiction} alt="Hololive EN Non-Fiction" />
-        <input
-          style={startButton}
-          type="button"
-          value="Tap to start"
-          onClick={() => props.setEnterClick(!props.enterClicked)}
-        />
-      </div>
+    <div className='center'>
+      <h1 className='start-title'>Start Page</h1>
+      <img className='start-image' src={nonFiction} alt="Hololive EN Non-Fiction" />
+      <input
+        className='start-button'
+        type="button"
+        value="Tap to start"
+        onClick={() => props.setEnterClick(!props.enterClicked)}
+      />
     </div>
   );
 }
