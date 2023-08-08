@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import EnterMain from '../../components/Enter_Main';
 import { AboutUs } from '../AboutUs';
+import { GlobalContext } from '../../GlobalContext/context';
 
 export const Home = () => {
-  const [clicked, setClicked] = useState(false);
+  const { startButton } = useContext(GlobalContext);
+
   return (
     <div>
-      {!clicked && <EnterMain enterClicked={clicked} setEnterClick={setClicked} />}
-      {clicked && <AboutUs />}
+      {!startButton && <EnterMain />}
+      {startButton && <AboutUs />}
     </div>
   );
 };
