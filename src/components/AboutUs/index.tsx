@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
-import { IconModal } from '../../components/IconModal';
+import { IconModal } from '../IconModal';
 import icon from '../../assets/images/master.png';
-import styles from './AboutUs.module.scss';
 import { GlobalContext } from '../../GlobalContext/context';
 
 export const AboutUs = () => {

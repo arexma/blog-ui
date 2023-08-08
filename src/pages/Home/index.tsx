@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
-import EnterMain from '../../components/Enter_Main';
-import { AboutUs } from '../AboutUs';
+import EnterMain from '../../components/EnterMain';
+import { AboutUs } from '../../components/AboutUs';
 import { GlobalContext } from '../../GlobalContext/context';
 
 export const Home = () => {
