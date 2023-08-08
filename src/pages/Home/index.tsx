@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import EnterMain from '../../components/Enter_Main';
+import { AboutUs } from '../AboutUs';
 
-function Home() {
-  const [clicked, setClicked] = useState(true);
+export const Home = () => {
+  const [clicked, setClicked] = useState(false);
   return (
     <div>
-      {clicked && <EnterMain enterClicked={clicked} setEnterClick={setClicked} />}
-      {!clicked && <h1>TESTTEST</h1>}
+      {!clicked && <EnterMain enterClicked={clicked} setEnterClick={setClicked} />}
+      {clicked && <AboutUs />}
     </div>
   );
-}
-
-export default Home;
+};
