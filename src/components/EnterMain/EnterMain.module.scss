@@ -1,0 +1,27 @@
+.EnterMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  h1 {
+    position: fixed;
+    top: 15%;
+    font-size: 900%;
+    color: lightcyan;
+    z-index: 2;
+  }
+
+  img {
+    position: fixed;
+    width: auto;
+    z-index: 1;
+    top: -10%;
+  }
+
+  input {
+    position: fixed;
+    top: 75%;
+    z-index: 2;
+  }
+}
