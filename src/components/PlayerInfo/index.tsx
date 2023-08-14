@@ -9,12 +9,7 @@ export const PlayerInfo = () => {
   return (
     <div className={styles.CharacterSnippet}>
       <div>
-        <button
-          onClick={() => {
-            setTopProfileButton!(true);
-            setBottomProfileButton!(false);
-          }}
-        >
+        <button onClick={() => setTopProfileButton!(true)}>
           <img src={leftIcon} />
         </button>
         <div>
@@ -23,12 +18,7 @@ export const PlayerInfo = () => {
         </div>
       </div>
       <div>
-        <button
-          onClick={() => {
-            setBottomProfileButton!(true);
-            setTopProfileButton!(false);
-          }}
-        >
+        <button onClick={() => setBottomProfileButton!(true)}>
           <img src={rightIcon} />
         </button>
         <div>
