@@ -1,17 +1,22 @@
 .CharacterSnippet {
-  > div {
-    > h2,
-    h3 {
+  div {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+    button {
+      align-self: flex-start;
+      margin-right: 15px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       font-family:
         Brush Script MT,
         Brush Script Std,
         cursive;
     }
-  }
-
-  .left {
-  }
-
-  .right {
   }
 }

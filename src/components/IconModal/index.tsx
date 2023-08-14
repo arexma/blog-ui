@@ -8,19 +8,19 @@ import styles from './IconModal.module.scss';
 interface IconModalProps {
   clicked: boolean;
   setClicked: React.Dispatch<React.SetStateAction<boolean>>;
+  title: string;
+  body: string;
 }
 export const IconModal = (props: IconModalProps) => {
   return (
-    <div className="modal show" style={{ display: 'block', position: 'initial' }}>
-      <Modal.Dialog>
-        <Modal.Header className={styles['modal-header']}>
-          <Modal.Title>About Us</Modal.Title>
-          <Button onClick={() => props.setClicked(!props.clicked)} variant="secondary">
-            Close
-          </Button>
-        </Modal.Header>
-        <Modal.Body>We are not nice people</Modal.Body>
-      </Modal.Dialog>
-    </div>
+    <Modal show={props.clicked} onHide={() => props.setClicked(!props.clicked)}>
+      <Modal.Header className={styles['modal-header']}>
+        <Modal.Title>{props.title}</Modal.Title>
+        <Button onClick={() => props.setClicked(!props.clicked)} variant="secondary">
+          Close
+        </Button>
+      </Modal.Header>
+      <Modal.Body>{props.body}</Modal.Body>
+    </Modal>
   );
 };
