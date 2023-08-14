@@ -5,15 +5,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { GlobalContext } from '../../GlobalContext/context';
 import styles from './IconModal.module.scss';
 
-export const IconModal = () => {
-  const { profileButton, setProfileButton } = useContext(GlobalContext);
-
+interface IconModalProps {
+  clicked: boolean;
+  setClicked: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export const IconModal = (props: IconModalProps) => {
   return (
     <div className="modal show" style={{ display: 'block', position: 'initial' }}>
       <Modal.Dialog>
         <Modal.Header className={styles['modal-header']}>
           <Modal.Title>About Us</Modal.Title>
-          <Button onClick={() => setProfileButton!(!profileButton)} variant="secondary">
+          <Button onClick={() => props.setClicked(!props.clicked)} variant="secondary">
             Close
           </Button>
         </Modal.Header>
