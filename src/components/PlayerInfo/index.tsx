@@ -7,7 +7,7 @@ import styles from './PlayerInfo.module.scss';
 export const PlayerInfo = () => {
   const { setTopProfileButton, setBottomProfileButton } = useContext(GlobalContext);
   return (
-    <div className={styles.CharacterSnippet}>
+    <div className={styles.PlayerInfo}>
       <div>
         <button onClick={() => setTopProfileButton!(true)}>
           <img src={leftIcon} />

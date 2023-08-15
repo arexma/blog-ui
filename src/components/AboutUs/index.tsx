@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { PlayerInfo } from '../PlayerInfo';
+import { BatteryLife } from '../BatteryLife';
 import { IconModal } from '../IconModal';
+import { PlayerInfo } from '../PlayerInfo';
 import { GlobalContext } from '../../GlobalContext/context';
 import styles from './AboutUs.module.scss';
 
@@ -12,6 +13,11 @@ export const AboutUs = () => {
     <div className={styles.AboutUs}>
       <div className={styles['row-one']}>
         <PlayerInfo />
+        <div>
+          {/*TODO: Replace with an actual currency component*/}
+          <h1>(-----------Currency-----------)</h1>
+          <BatteryLife />
+        </div>
       </div>
       <div className={styles['row-two']}></div>
       <div className={styles['row-three']}></div>

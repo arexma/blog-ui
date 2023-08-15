@@ -13,7 +13,7 @@ interface IconModalProps {
 }
 export const IconModal = (props: IconModalProps) => {
   return (
-    <Modal show={props.clicked} onHide={() => props.setClicked(!props.clicked)}>
+    <Modal show={props.clicked} onHide={() => props.setClicked(!props.clicked)} centered>
       <Modal.Header className={styles['modal-header']}>
         <Modal.Title>{props.title}</Modal.Title>
         <Button onClick={() => props.setClicked(!props.clicked)} variant="secondary">

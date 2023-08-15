@@ -1,0 +1,16 @@
+.BatteryLife {
+  justify-self: center;
+  div {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    h1 {
+      padding-left: 10px;
+      font-size: 3em;
+    }
+  }
+}
