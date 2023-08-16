@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import EnterMain from '../../components/EnterMain';
-import { AboutUs } from '../../components/AboutUs';
+import { Lobby } from '../../components/Lobby';
 import { GlobalContext } from '../../GlobalContext/context';
 import styles from './Home.module.scss';
 export const Home = () => {
@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <div className={styles.Home}>
       {!startButton && <EnterMain />}
-      {startButton && <AboutUs />}
+      {startButton && <Lobby />}
     </div>
   );
 };

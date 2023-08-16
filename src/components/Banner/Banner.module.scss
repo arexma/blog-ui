@@ -1,0 +1,13 @@
+.Banner {
+  display: flex;
+  flex-direction: column;
+  > input {
+    width: 20rem;
+    height: 10rem;
+    border: 1px solid black;
+  }
+  div {
+    display: flex;
+    padding-top: 10px;
+  }
+}

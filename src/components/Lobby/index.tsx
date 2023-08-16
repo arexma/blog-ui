@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
+import { Banner } from '../Banner';
 import { BatteryLife } from '../BatteryLife';
 import { IconModal } from '../IconModal';
 import { PlayerInfo } from '../PlayerInfo';
 import { GlobalContext } from '../../GlobalContext/context';
-import styles from './AboutUs.module.scss';
+import styles from './Lobby.module.scss';
 
-export const AboutUs = () => {
+export const Lobby = () => {
   const { topProfileButton, setTopProfileButton, bottomProfileButton, setBottomProfileButton } =
     useContext(GlobalContext);
 
@@ -15,8 +16,9 @@ export const AboutUs = () => {
         <PlayerInfo />
         <div>
           {/*TODO: Replace with an actual currency component*/}
-          <h1>(-----------Currency-----------)</h1>
+          <h1>(---------Currency---------)</h1>
           <BatteryLife />
+          <Banner />
         </div>
       </div>
       <div className={styles['row-two']}></div>

@@ -2,7 +2,14 @@
   height: 100vh;
   width: 100vw;
   display: grid;
+  background: no-repeat center url('../../assets/images/sao.png');
+  background-size: 100% 100%;
   grid-template-rows: 2fr repeat(2, 1fr) 0.25fr;
+  color: #f0ead6;
+  font-family:
+    Brush Script MT,
+    Brush Script Std,
+    cursive;
 }
 
 .row-one {
@@ -12,7 +19,7 @@
   > div:nth-child(2) {
     display: grid;
     grid-template-rows: 0.5fr 1.5fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     > h1 {
       grid-row: 1;
       grid-column: 1 / span 3;
