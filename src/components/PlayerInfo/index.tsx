@@ -13,7 +13,7 @@ export const PlayerInfo = () => {
           <img src={leftIcon} />
         </button>
         <div>
-          <h2>[CT] Shifu</h2>
+          <h2>[Clan Tag] Shifu</h2>
           <h3>lvl 60 - [title here]</h3>
         </div>
       </div>
@@ -22,7 +22,7 @@ export const PlayerInfo = () => {
           <img src={rightIcon} />
         </button>
         <div>
-          <h2>[CT] Arexma</h2>
+          <h2>[Clan Tag] Arexma</h2>
           <h3>lvl 60 - [title here]</h3>
         </div>
       </div>

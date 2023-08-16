@@ -4,6 +4,7 @@ import Blog1 from '../../assets/images/master.png';
 import Blog2 from '../../assets/images/hololive_en_non_fiction.svg';
 import Blog3 from '../../assets/images/loi_pfp.jpg';
 const Blog4 = '';
+
 export const Banner = () => {
   // Banners will be path names to whatever blog posts we're currently showing
   // Blog path --> img path
