@@ -137,7 +137,7 @@ module.exports = {
     },
     {
       files: ['src/**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx'],
-      extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking', 'plugin:solid/typescript'],
+      extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking', 'plugin:react/recommended'],
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
@@ -196,5 +196,13 @@ module.exports = {
     },
   ],
   plugins: ['react', '@typescript-eslint', 'prettier', 'import', 'regexp'],
-  rules: {},
+  rules: {
+    'import/order': [
+      'error',
+      {
+        groups: [['builtin', 'external'], 'internal', 'parent', 'sibling', 'index'],
+        'newlines-between': 'always',
+      },
+    ],
+  },
 };
