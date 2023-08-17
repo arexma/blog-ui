@@ -5,6 +5,7 @@ import { IconModal } from '../IconModal';
 import { PlayerInfo } from '../PlayerInfo';
 import { GlobalContext } from '../../GlobalContext/context';
 import styles from './Lobby.module.scss';
+import { UtilityIcons } from '../UtilityIcons';
 
 export const Lobby = () => {
   const { topProfileButton, setTopProfileButton, bottomProfileButton, setBottomProfileButton } =
@@ -19,6 +20,7 @@ export const Lobby = () => {
           <h1>(---------Currency---------)</h1>
           <BatteryLife />
           <Banner />
+          <UtilityIcons />
         </div>
       </div>
       <div className={styles['row-two']}></div>

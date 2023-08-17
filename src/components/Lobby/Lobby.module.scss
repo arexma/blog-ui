@@ -19,7 +19,7 @@
   > div:nth-child(2) {
     display: grid;
     grid-template-rows: 0.5fr 1.5fr;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 0.5fr;
     > h1 {
       grid-row: 1;
       grid-column: 1 / span 3;
