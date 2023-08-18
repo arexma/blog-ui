@@ -17,7 +17,7 @@ export const Lobby = () => {
         <PlayerInfo />
         <div>
           {/*TODO: Replace with an actual currency component*/}
-          <h1>(---------Currency---------)</h1>
+          <h1>(------Currency------)</h1>
           <BatteryLife />
           <Banner />
           <UtilityIcons />
