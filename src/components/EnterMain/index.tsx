@@ -7,7 +7,7 @@ function EnterMain() {
   const { startButton, setStartButton } = useContext(GlobalContext);
   return (
     <div className={styles.EnterMain}>
-      <h1>Start Page</h1>
+      <h1>Welcome to our blog!</h1>
       <input type="button" value="Tap to start" onClick={() => setStartButton!(!startButton)} />
     </div>
   );
