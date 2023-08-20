@@ -3,6 +3,8 @@ import { Banner } from '../Banner';
 import { BatteryLife } from '../BatteryLife';
 import { IconModal } from '../IconModal';
 import { PlayerInfo } from '../PlayerInfo';
+import { HomeBottomUI } from '../HomeBottomUI';
+import { Footer } from '../Footer';
 import { GlobalContext } from '../../GlobalContext/context';
 import styles from './Lobby.module.scss';
 import { UtilityIcons } from '../UtilityIcons';
@@ -24,8 +26,12 @@ export const Lobby = () => {
         </div>
       </div>
       <div className={styles['row-two']}></div>
-      <div className={styles['row-three']}></div>
-      <div className={styles['row-four']}></div>
+      <div className={styles['row-three']}>
+        <HomeBottomUI />
+      </div>
+      <div className={styles['row-four']}>
+        <Footer />
+      </div>
       {topProfileButton && (
         <IconModal
           clicked={topProfileButton}
