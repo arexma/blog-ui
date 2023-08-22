@@ -1,12 +1,12 @@
 .Footer {
   display: flex;
+  
   div {
     display: flex;
     align-items: flex-start;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-
     img {
       padding-left: 3px;
       padding-bottom: 3px;
@@ -14,18 +14,29 @@
     }
   }
 }
+
 .AboutUs {
   background-color: beige;
+  color: black;
+  width: 5%;
+  align-self: center;
 }
+
 .Alexander {
-  background-color: white;
   flex: 2;
 }
+
 .Loi {
-  background-color: white;
   flex: 2;
 }
+
 .Extra {
   text-align: right;
   /*flex-direction: column;*/
+}
+
+.Row {
+  background-color: white;
+  width: 100%;
+  color: black;
 }
