@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../../GlobalContext/context';
 import leftIcon from '../../assets/images/loi_pfp.jpg';
-import rightIcon from '../../assets/images/master.png';
+import rightIcon from '../../assets/images/alex_pfp.jpg';
 import styles from './PlayerInfo.module.scss';
 
 export const PlayerInfo = () => {
@@ -14,7 +14,7 @@ export const PlayerInfo = () => {
         </button>
         <div>
           <h2>[Clan Tag] Shifu</h2>
-          <h3>lvl 60 - [title here]</h3>
+          <h3>lvl 20 - [Leader]</h3>
         </div>
       </div>
       <div>
@@ -23,7 +23,7 @@ export const PlayerInfo = () => {
         </button>
         <div>
           <h2>[Clan Tag] Arexma</h2>
-          <h3>lvl 60 - [title here]</h3>
+          <h3>lvl 20 - [Leader]</h3>
         </div>
       </div>
     </div>
