@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Lobby } from '../../components/Lobby';
 import { GlobalContext } from '../../GlobalContext/context';
 import { Footer } from '../../components/Footer';

@@ -19,6 +19,7 @@ export const GlobalProvider: FC<Props> = ({ children }) => {
   const [startButton, setStartButton] = useState<boolean>(false);
   const [topProfileButton, setTopProfileButton] = useState<boolean>(false);
   const [bottomProfileButton, setBottomProfileButton] = useState<boolean>(false);
+
   return (
     <GlobalContext.Provider
       value={{

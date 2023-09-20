@@ -6,7 +6,11 @@ import guild from '../../assets/images/beer-outline.svg';
 import shop from '../../assets/images/bag-outline.svg';
 import styles from './HomeButtomUI.module.scss';
 
+import { useNavigate } from 'react-router-dom';
+
 export const HomeBottomUI = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.HomeBottomUI}>
       <div className={styles.LeftSide}>
@@ -16,9 +20,7 @@ export const HomeBottomUI = () => {
         <img src={guild}></img>
       </div>
       <div className={styles.RightSide}>
-        <a href="/adventure">
-          <img src={adventure}></img>
-        </a>
+        <img onClick={() => navigate('/adventure')} src={adventure}></img>
       </div>
     </div>
   );
