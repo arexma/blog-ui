@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
+import { Adventure } from './pages/Adventure';
 import { GlobalProvider } from './GlobalContext/context';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/adventure" element={<Adventure />}></Route>
         </Routes>
       </BrowserRouter>
     </GlobalProvider>

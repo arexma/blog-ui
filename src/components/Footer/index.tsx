@@ -10,7 +10,7 @@ export const Footer = () => {
         <h6>About Us</h6>
       </div>
       <div className={styles.Row}>
-        <div className={styles.Alexander}>
+        <div>
           <h6>Alexander Ma:</h6>
           <a href={'https://www.linkedin.com/in/alexander-ma-2956a2216/'} target={'_blank'}>
             <img src={LinkedIn}></img>
@@ -19,7 +19,7 @@ export const Footer = () => {
             <img src={Github}></img>
           </a>
         </div>
-        <div className={styles.Loi}>
+        <div>
           <h6>Loi Nguyen:</h6>
           <a href={'https://www.linkedin.com/in/loi-nguyen-9aaa14252/'} target={'_blank'}>
             <img src={LinkedIn}></img>
@@ -27,9 +27,6 @@ export const Footer = () => {
           <a href={'https://github.com/LoiVNguyen'} target={'_blank'}>
             <img src={Github}></img>
           </a>
-        </div>
-        <div className={styles.Extra}>
-          <h6>Privacy Policy</h6>
         </div>
       </div>
     </div>

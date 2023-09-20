@@ -6,14 +6,11 @@
 .LeftSide {
   display: flex;
 
-  img:nth-child(1) {
-    margin-left: 2rem;
-  }
-
   img {
     height: 8rem;
-    margin-left: 4rem;
-    margin-top: 10rem;
+    margin-left: 1rem;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
     filter: invert(1);
   }
 }
@@ -22,7 +19,9 @@
   img {
     margin-top: 15rem;
     align-self: right;
-    height: 70px;
+    margin-top: 11rem;
+    margin-right: 1rem;
+    height: 80px;
     width: auto;
   }
 }

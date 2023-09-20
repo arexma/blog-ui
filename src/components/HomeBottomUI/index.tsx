@@ -16,7 +16,9 @@ export const HomeBottomUI = () => {
         <img src={guild}></img>
       </div>
       <div className={styles.RightSide}>
-        <img src={adventure}></img>
+        <a href="/adventure">
+          <img src={adventure}></img>
+        </a>
       </div>
     </div>
   );

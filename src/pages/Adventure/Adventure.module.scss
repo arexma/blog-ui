@@ -1,0 +1,23 @@
+.Adventure {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 0.2fr 2fr 0.1fr;
+}
+
+.row-one {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  background-color: antiquewhite;
+}
+
+.row-two {
+  grid-row: 2;
+  background-color: black;
+}
+
+.row-three {
+  grid-row: 3;
+  background-color: antiquewhite;
+}
